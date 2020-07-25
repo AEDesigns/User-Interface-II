@@ -1,1 +1,129 @@
-/* Add CSS styling here */
+/* General Styles */
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+/* Nav Styles */
+#sec_1 {
+    width: 50vw;
+    margin: 0 auto;
+}
+.top_nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_nav_item {
+    font-size: 30px;
+}
+
+/* Section 2 Styles */
+
+#sec_2{
+    width: 50vw;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+h1:hover {
+    color: red;
+    font-size: 45px;
+}
+
+.purty {
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5em;
+}
+
+/* Project Styles */
+#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#projects img {
+    width: 20em;
+    height: auto;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* About Styles */
+
+.about_txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.content_imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px){
+    .top_nav {
+        flex-direction: column;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .small_txt {
+        display: none;
+    }
+
+    .row {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 10em;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    p {
+        color: darkgreen;
+    }
+    .small_txt {
+        display: none;
+    }
+
+    .row {
+        max-width: 50%;
+    }
+}
